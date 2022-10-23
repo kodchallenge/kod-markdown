@@ -1,0 +1,32 @@
+:root, :root.km-light {
+    --color-general-text: #333;
+    --color-muted: rgba(179, 190, 202, 0.2);
+}
+:root.km-dark {
+    --color-general-text: #eee;
+    --color-muted: rgba(102, 114, 126, 0.4);
+}
+.kod-md img {
+    width: 100%;
+    height: auto;
+}
+.kod-md {
+    font-family: Geneva, Verdana, sans-serif;
+    color: var(--color-general-text);
+}
+
+.kod-md > * {
+    line-height: 2;
+}
+
+.kod-md code.inline {
+    background-color: var(--color-muted);
+    border-radius: 0.3em;
+    padding: 0.2em 0.4em;
+    margin: 0;
+    text-shadow: rgb(0 0 0 / 10%) 0px 1px;
+}
+
+.kod-md .footnotes li {
+    font-size: 75%;
+}
