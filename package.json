@@ -1,19 +1,37 @@
 {
   "name": "kod-markdown",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Yasin Torun (https://github.com/yasintorun)",
+  "repository": "https://github.com/kodchallenge/kod-markdown",
+  "homepage": "https://github.com/kodchallenge/kod-markdown#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "type": "module",
+  "keywords": [
+    "markdown",
+    "react",
+    "react markdown",
+    "kod markdown",
+    "full markdown"
+  ],
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/kod-markdown.umd.js",
+  "module": "./dist/kod-markdown.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/kod-markdown.es.js",
+      "require": "./dist/kod-markdown.umd.js"
+    }
+  },
   "scripts": {
-    "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
-  },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-markdown": "^8.0.3",
-    "react-syntax-highlighter": "^15.5.0",
-    "remark-gfm": "^3.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",
@@ -22,6 +40,14 @@
     "@vitejs/plugin-react": "^2.1.0",
     "typescript": "^4.6.4",
     "vite": "^3.1.0",
+    "vite-plugin-dts": "^1.6.6",
     "vite-tsconfig-paths": "^3.5.2"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-markdown": "^8.0.3",
+    "react-syntax-highlighter": "^15.5.0",
+    "remark-gfm": "^3.0.1"
   }
 }
