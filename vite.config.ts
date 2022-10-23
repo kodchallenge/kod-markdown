@@ -20,8 +20,8 @@ export default defineConfig({
           react: 'React',
           'react-split': 'Split',
           "rect-markdown": "ReactMarkdown",
-          "Prism": "react-syntax-highlighter",
-          "remarkGfm": "remark-gfm"
+          "react-syntax-highlighter": "Prism",
+          "remark-gfm": "remarkGfm"
         }
       },
     }
